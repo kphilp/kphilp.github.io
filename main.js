@@ -1,4 +1,4 @@
-var myName = "Kev's Blog"; 
+var myName = "Kevin Philp"; 
  
  
 var red = [0, 100, 63]; 
