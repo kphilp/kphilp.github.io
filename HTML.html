@@ -1,0 +1,140 @@
+<!DOCTYPE html> 
+
+<html lang="en-us">
+
+<head> 
+	<title>Web Dev Wiki</title>
+	<link rel="icon" href="../../Images/logo_transparent_background_FAVICON.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../../Images/logo_transparent_background_FAVICON.png" type="image/png">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Author" content="Kevin Philp">
+</head> 
+
+<body>
+
+	<!-- Header -->
+	<header>
+		<!-- Navigation Menu -->
+		<nav class="topnav">
+			<ul>
+				<li><a href="../../../index.html">Home</a></li>
+				<li class="active"><a href="#0">HTML Code</a></li>
+				<li><a href="#0">CSS Code</a></li>
+				<li><a href="#0">Live Examples</a></li>
+				<li><a href="./Resources/Pages/Java Script/JavaScript.html">Java Script</a></li>
+				<li style="float:right"><a href="#about">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Main Content -->
+	<main>
+		<!-- Menu to choose which topic you want to learn about -->
+		<nav>
+			<h1 class="topicheader">Choose a Topic</h1>
+			<div class="row topicmenu">
+				<a href="#">Creating Lists</a>
+				<a href="#">Creating Tables</a>
+				<a href="#">Link</a>
+			</div>
+		</nav>
+	
+	<!-- Section for creating lists -->
+	<article>
+		<h1 class="topicheader">How to create lists</h1>
+		<h3 class="subtopicheader">Ordered Lists</h3>
+		<p>The following HTML code will create a ordered list which numbers the items:</p>
+		<div class="row">
+			<div class="column example">
+		  		<h3 class="centered">HTML Code</h3>
+		  		<p class="centered">
+					&lt;ol&gt;<br> 
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Example&lt;/li&gt;<br> 
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Example&lt;/li&gt;<br> 
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Example&lt;/li&gt;<br> 
+					&lt;/ol&gt;
+				</p>
+			</div>
+		
+			<div class="column example">
+				<h3 class="centered">Actual Output</h3>
+		  		<ol>
+					<li>Example</li>
+					<li>Example</li>
+					<li>Example</li>
+				</ol>  
+			</div>
+		
+	  	</div>
+
+		  <h3 class="subtopicheader">Un-Ordered Lists</h3>
+		  <p>The following HTML code will create a bulleted list:</p>
+		  <div class="row">
+			  <div class="column example">
+					<h3 class="centered">HTML Code</h3>
+				
+					<p class="centered">
+						&lt;ul&gt;<br> 
+							&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Example&lt;/li&gt;<br> 
+							&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Example&lt;/li&gt;<br> 
+							&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;Example&lt;/li&gt;<br> 
+						&lt;/ul&gt;
+					</p>
+			  </div>
+		  
+			  <div class="column example">
+				  <h3 class="centered">Actual Output</h3>
+					<ul>
+					  <li>Example</li>
+					  <li>Example</li>
+					  <li>Example</li>
+				  </ul>  
+			  </div>
+			</article>
+
+	<!-- Section for creating Tables -->
+	<article>
+		<div class="row">
+			<h1 class="topicheader">How to Create Tables</h1>
+		
+			<table>
+			<thead>
+				<th>Company</th>
+				<th>Quantity</th>
+				<th>Status</th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Company 1</td>
+					<td>25</td>
+					<td rowspan="3">Out for Delivery</td>
+				</tr>
+				<tr>
+					<td>Company 2</td>
+					<td>42</td>
+				</tr>
+				<tr>
+					<td>Company 3</td>
+					<td>101</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total</td>
+					<td colspan="2">168</td>
+				</tr>
+			</tfoot>
+			</table>
+		</div>
+	</article>
+</main>
+	
+	<!-- Footer -->
+	<footer class="footer">
+		<p>&copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script> Kevin Philp IT Consultancy</p>
+	</footer>
+</body> 	
+
+</html>
