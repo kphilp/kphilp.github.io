@@ -1,0 +1,276 @@
+/* Universal Styles */
+body { 
+  background: #EEE;
+	padding: 0; 
+	margin: 0;
+}
+
+.topnav {
+  margin-bottom: 76px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Specific (one off) Styles */
+#headerimage {
+	margin-top: 80px;
+  opacity: 0.6;
+	width: 100%;
+	height: 100%;
+}
+
+h1, h2 {
+	margin: 0px;
+}
+
+/* Very important piece of code - but not sure what it does? if removed the examples dont sit side by side?*/
+* {
+  box-sizing: border-box;
+}
+
+/* Navigation */
+.navigation {
+  box-sizing: border-box;
+  background-color: #1190cb;
+  overflow: auto;
+  padding: 18px 50px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header ul {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+header li {
+  float: left;
+  color: #FFF;
+  display: block;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+
+	border-spacing: 1px;
+  position: sticky;
+  background-color: #1190cb;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+header li:hover {
+  background-color: #cb4c11;
+  color: white;
+}
+
+.active {
+  background-color: #000000;
+  color: #bbb;
+}
+
+header.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+header.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+header.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #141414;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+header.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header.change .bar2 {opacity: 0;}
+
+header.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Style the top navigation bar */
+.topicmenu {
+  overflow: hidden;
+  background-color: #333;
+  margin: 10px;
+}
+
+/* Style the topnav links */
+.topicmenu a {
+  float: left;
+  display: block;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  margin: 5px;
+}
+
+/* Change color on hover */
+.topicmenu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topicheader {
+  background-color: #cb4c11;
+  color: #ddd;
+  padding: 14px 16px;
+  display: block;
+}
+
+.subtopicheader {
+  background-color: #141414;
+  color: #ddd;
+  padding: 14px 16px;
+  display: block;
+  margin: 0px;
+}
+
+/* Style the coding examples */
+.example {
+  background-color: #1190cb;
+  border-top: 1px solid #cb4c11;
+  border-left: 1px solid #cb4c11;
+  border-bottom: 1px solid #cb4c11;
+  border-right: 0.5px solid #cb4c11;
+  display: block;
+  padding: 20px;
+  width: 80%;
+  margin: 10px;
+}
+
+/* ID Styling */
+#logo {
+  height: 300px;
+  width: 300px;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Table Styling */
+table {
+  height: 40%;
+  left: 10%;
+  margin: 20px auto;
+  overflow-y: scroll;
+  position: static;
+  width: 80%;
+}
+
+thead th {
+  background: #1190cb;
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  text-align: left;
+  width: 33.3333%;
+}
+
+.search {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  color: #AAA;
+  padding: 20px;
+  margin: 50px auto 0px auto;
+  width: 77%;
+}
+
+table, td, th {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #1190cb;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: large;
+  font-weight: bold;
+}
