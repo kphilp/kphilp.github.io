@@ -1,0 +1,176 @@
+/* Universal Styles */
+body { 
+  background: #EEE;
+	padding: 0; 
+	margin: 0;
+}
+
+section {
+  padding-top: 100px;
+}
+
+h1, h2 {
+	margin: 0px;
+}
+
+header ul {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+header li {
+  float: left;
+  color: #FFF;
+  display: block;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 20px 18px 10px 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #bbb;
+	border-spacing: 1px;
+  position: sticky;
+  background-color: #1190cb;
+}
+
+header li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+header.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #141414;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+header.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+header.change .bar2 {opacity: 0;}
+
+header.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Change the link color on hover */
+header li:hover {
+  background-color: #cb4c11;
+  color: white;
+}
+
+/* All classes specified here */
+.centered {
+  text-align: center;
+}
+
+.topicheader {
+  background-color: #cb4c11;
+  color: #ddd;
+  padding: 14px 16px;
+  display: block;
+}
+
+.active {
+  background-color: #000000;
+  color: #bbb;
+}
+
+/* Footer Sytling */
+.footer {
+  background-color: #1190cb;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: large;
+  font-weight: bold;
+}
+
+/*Greys out button and displays a no entry sign on cursor hover */
+.disabled { 
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Main Nav bar at top of page styling */
+.navigation {
+  box-sizing: border-box;
+  background-color: #1190cb;
+  overflow: auto;
+  padding: 18px 50px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Style the top navigation bar */
+.topicmenu {
+  overflow: hidden;
+  background-color: #333;
+  margin: 10px;
+}
+
+/* Style the topnav links */
+.topicmenu a {
+  float: left;
+  display: block;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 40px;
+  width: 200px;
+}
+
+/* Change color of the topic menu when mouse hovers over it */
+.topicmenu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Specific (one off) Styles - All IDs */
+#headerimage {
+	margin-top: 80px;
+  opacity: 0.6;
+	width: 100%;
+	height: 100%;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* decide if this code needs to be removed or not */
+header.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
