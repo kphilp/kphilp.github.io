@@ -1,79 +1,300 @@
-<!DOCTYPE html> 
 
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8">
 
-<head> 
-	<title>Web Dev Wiki</title>
-	<link rel="icon" href="./Resources/Images/logo_transparent_background_FAVICON.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./Resources/Images/logo_transparent_background_FAVICON.png" type="image/png">
-	<meta charset="utf-8"/>
-	<link rel="stylesheet" type="text/css" href="./Resources/CSS/Style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Author" content="Kevin Philp">
-</head> 
+    <title>
+      Play Possible Roleplay (PRP) Today | Home | FiveM GTA RP
+    </title>
 
-<body>
-	<!-- Header -->
-	<header>
-		<!-- Header Bakground Image -->	
-		<img src="./Resources/Images/logo_transparent_background.png" id="headerimage" alt="headerimage"></img>
-	
-		<!-- Navigation Menu -->
-			<nav class="bigscreen">
-				<ul>
-					<li class="active"><a href="#home">Home</a></li>
-					<li><a href="./Resources/Pages/HTML/HTML.html">HTML Code</a></li>
-					<li class="disabled"><a href="#0" class="disabled">CSS Code</a></li>
-					<li class="disabled"><a href="#0" class="disabled">Live Examples</a></li>
-					<li><a href="./Resources/Pages/Java Script/JavaScript.html">Java Script</a></li>
-					<li style="float:right"><a href="#about">About</a></li>
-				</ul>
-			</nav>
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="" name="keywords">
+    <meta content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" name="viewport">
+    <link href="css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style-dark.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/colors/yellow-2.css" media="screen" rel="stylesheet" title="yellow-2" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CDosis:200,300,400,500,600,700,800%7COswald:300,400,700%7CMontserrat:400,700" rel="stylesheet" type="text/css">
+  </head>
 
-			<nav class="mobilescreen">	
-				<div id="myNav" class="overlay">
-					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					  <div class="overlay-content">
-						   <a href="#0">Home</a>
-						<a href="./Resources/Pages/HTML/HTML.html">HTML Code</a>
-						<a href="#0">CSS Code </a>
-						<a href="./Resources/Pages/Java Script/JavaScript.html">Java Script</a>
-						<a href="#0">About</a>
-					  </div>
-				</div>
-	
-				<h2>Menu</h2>
-				<span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776;</span>
-				<script>
-					function openNav() {
-					  document.getElementById("myNav").style.height = "100%";
-					}
-					function closeNav() {
-					  document.getElementById("myNav").style.height = "0%";
-					}
-				</script>
-			</nav>
-	</header>
-	
-	<!-- Main Content -->
-	<main>
-		<!-- Menu to choose which topic you want to learn about -->
-		<nav>
-			<h1 class="topicheader centered">Choose a Topic</h1>
-			<div class="row topicmenu">
-				<a href="./Resources/Pages/HTML/HTML.html">HTML</a>
-				<a href="#0" class="disabled">CSS</a>
-				<a href="#0" class="disabled">Live Examples</a>
-				<a href="#0" class="disabled">Java Script</a>
-			</div>
-		</nav>
-	</main>
-	
-	<!-- Footer -->
-	<footer class="footer">
-		<p>&copy; <script type="text/javascript"> document.write(new Date().getFullYear());</script> Kevin Philp IT Consultancy</p>
-	</footer>
+  <body>
 
-</body>
+    <div class="film-grain"></div>
 
+    <div id="preloader">
+      <div id="preloader-status">
+        <div class="preloader-position preloader-effect">
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <div
+    class="hero-fullscreen hero-bg">
+      <div class="slide-YT hero-fullscreen">
+        <div class="slide bg-img-YT"></div>
+  <div class="video-background">
+        <iframe class="videoContainer__video" height="100%" width="130%" src="https://www.youtube.com/embed/HWurFwhu09s?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1" frameborder="0"></iframe>
+   </div>
+      </div>
+      <div class="preload-content"></div>
+    </div>
+
+    <div class="menu-trigger top-position" id="menu">
+      <button class="lines-button minus menu-toggle" id="main-menu-caller" type="button"><span class="lines"></span></button>
+    </div>
+
+    <svg id="cursor" width="20" height="20">
+      <defs>
+        <linearGradient id="gradient" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="white"></stop>
+          <stop offset="100%" stop-color="white"></stop>
+        </linearGradient>
+      </defs>
+      <circle r="07" cx="10" cy="10" fill="none"></circle>
+      <line x1="0" y1="0" x2="20" y2="20"></line>
+      <line x1="0" y1="20" x2="20" y2="0"></line>
+    </svg>
+
+    <div id="ui-layer">
+      <div id="menu-wrapper">
+        <div id="main-menu">
+          <div class="menu-nav-wrapper">
+            <nav class="menu-nav">
+              <ul class="brackets">
+                <li class="menu">
+                  <a class="menu-state active"
+                    href="#"
+                    id="fire-home">Start</a>
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="#" id="fire-services">Rules</a>
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="https://possibleroleplay.tebex.io/" target="_blank">Store</a>
+                </li>
+                <li class="menu">
+                  <a class="menu-state" href="#" id="fire-contact">Devs</a>
+                </li>
+                <li class="menu credits">
+                  <a href="#">PossibleRP&copy;2020.</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="upper-page current"
+        id="home">
+
+      <div class="line-left left-position"></div>
+
+      <div class="line-right right-position">
+        <a href="#">PossibleRP &copy; 2020.</a>
+      </div>
+
+      <div class="transparent-borders OFF"></div>
+      <div class="center-container-home">
+
+        <div class="center-block-home">
+
+          <div class="upper-content">
+
+            <div class="container sections">
+
+              <div class="row">
+
+                <div class="fin-wrapper introduction">
+
+                  <div class="fin-slides-wrapper">
+                  </div>               
+                  <div class="fin-heading">
+                    <div class="fin-heading">
+                      <img src="/img/prp-logo.png" class="img-mobile" alt="Possible RP" />
+                      <div class="d-flex flex-wrap justify-content-center">
+                        <a href="fivem://connect/51.195.176.32:32124" target="_blank" class="button landing-ctas first">Play Now</a>
+                        <a href="https://discord.gg/tbk3sj8VwX"  target="_blank" class="button landing-ctas">Join Community</a>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-page"
+        id="services">
+
+      <div class="center-container">
+
+        <div class="center-block">
+
+          <div class="lower-content">
+
+            <div class="container sections">
+
+              <div class="row">
+                <h4>
+                  //
+                </h4>
+                <h2>
+                  Rules <span class="get-behind">Rules</span>
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="dividerOT"></div>
+              </div>
+
+              <div class="services-columns">
+
+                <div class="row">
+                  <div class="col-md-6 services-padding mb40">
+                    <h5>
+                      <span class="awesome">Visit our Discord to read our City rules.</span>01
+                    </h5>
+                    <p>
+                      <a href="https://discord.gg/uKBNyMTU" target="_blank" class="button landing-ctas first">Possible RP Discord</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 services-padding border-top-services mt40">
+                    <h5>
+                      <span class="awesome">General Rules</span> 01
+                    </h5>
+                    <p>
+                    <ul>
+                      <li>Any advertisement of another server, website or discord will be completely removed and a ban will be given.</li>
+                      <li>Age Requirement for Whitelisting: 16+</li>
+                      <li>A working, quality mic is required.</li>
+                      <li>Your character needs to have a realistic name, and must not be derogatory in anyway, lengthy bans will be given and characters will be completely wiped.</li>
+                      <li>Being toxic, or breeding toxicity in any way will result in a ban, further toxicity will result in being permanently banned from all PRP platforms.</li>
+                    </ul>
+                    </p>
+                  </div>
+                  <div class="col-md-6 services-padding border-left-services border-top-services mt40">
+                    <h5>
+                      <span class="awesome">In-Game Information</span> 02
+                    </h5>
+                    <p>
+                      <ul>
+                        <li>Stay in character at all times</li>
+                        <li>In the event there’s an issue, completely role-play out the scenario and player report if needed. Do not break character / inform the player they are breaking a rule in-game.</li>
+                        <li>Do not do actions in game in order to bait others into breaking roleplay.</li>
+                        <li>OOC Chat is restricted to RP stopping technical issues only and is for things that cannot be handled in a support channel through discord.</li>
+                        <li>Loot boxing</li>
+                        <li>Looting any player without much roleplay presented for them is prohibited.</li>
+                        <li>Metagaming (discussing IC ongoings out of the City (OOC)</li>
+                        <li>Purposely using or relaying information that your character did not learn in-game (Twitch Chats and Discord Channels included) to shape in-game roleplay.</li>
+                        <li>Powergaming/Fail RP</li>
+                        <li>Talking/Organizing/Calling out locations while downed.</li>
+                        <li>Finding the quickest way to make money, rather than roleplaying around the mechanic.</li>
+                        <li>Avoiding the use of “Put in vehicle” command. Escorting people while in vehicles.</li>
+                        <li>The use of /me and /notes should be used as much as possible to help aid your scenarios.</li>
+                        <li>Driving at unrealistic speeds with no character reason over and over.</li>
+                        <li>Random Death Match(RDM) & Vehicle Death Match (VDM)</li>
+                        <li>Attacking another player/group without any story/roleplay leading up to it..</li>
+                      </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lower-page"
+        id="contact">
+
+      <div class="center-container">
+
+        <div class="center-block">
+
+          <div class="lower-content">
+
+            <div class="container sections">
+
+              <div class="row">
+                <h4>
+                  //
+                </h4>
+                <h2>
+                  Developpement <span class="get-behind">Developpement</span>
+                </h2>
+              </div>
+
+              <div class="row">
+                <div class="dividerOT"></div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <span class="awesome-contact"><i class="fab fa-discord"></i></span>
+                  <p>
+                    aRobbo<br>
+                    <a>| Dev.<br></a>
+                  </p>
+                </div>
+                <div class="col-md-4">
+                  <span class="awesome-contact"><i class="fab fa-discord"></i></span>
+                  <p>
+                    Pyuaa<br>
+                    <a>| Dev.<br></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var play = false;
+              var vid = document.getElementById("loading");
+              vid.volume = 0.1;
+              window.addEventListener('keyup', function(e)
+              {
+                  if (e.which == 69){
+                      vid.volume = Math.min(vid.volume + 0.1,1);
+                  } else if(e.which == 65){
+                      vid.volume = Math.max(vid.volume - 0.1,0);
+                  };
+              });
+      
+              var audio = document.querySelector('audio');
+      
+              if (audio) {
+      
+              window.addEventListener('keydown', function (event) {
+      
+              var key = event.which || event.keyCode;
+      
+              if (key === 32) { // spacebar
+      
+              event.preventDefault();
+      
+              audio.paused ? audio.play() : audio.pause();
+            
+          }
+      
+        });
+      }
+      </script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="/js/plugins.js" type="text/javascript"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  </body>
 </html>
